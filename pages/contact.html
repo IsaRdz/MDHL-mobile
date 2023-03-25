@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../assets/hockey.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contact</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="navbar">
+          <div class="logo">
+            <a href="../index.html"
+              ><img src="../assets/logomdhl.png" alt="Logo MDHL"
+            /></a>
+            <div class="burger-lines" id="burger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+            </div>
+          </div>
+          <div class="container nav-container">
+            <div class="menu-items hide" id="menu-items">
+              <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./about.html">About MDHL</a></li>
+                <li><a href="./registration.html">Registration</a></li>
+                <li><a href="./game-information.html">Game Information</a></li>
+                <li><a href="./rules.html">Rules</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li id="close">Exit</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1>Contact</h1>
+      <form action="" class="form-contact">
+        <p class="contact-text">
+          Please email us at <a href="#">mdhl@chihockey.org</a>
+          or just send your consult here. We reply to your email as soon as we
+          can.
+        </p>
+        <div>
+          <input
+            type="text"
+            class="input-registration input-contact"
+            name="name"
+            id="name"
+            required
+          />
+          <label for="name" class="label-registration label-contact"
+            >Name</label
+          >
+        </div>
+        <div>
+          <input
+            type="text"
+            class="input-registration input-contact"
+            name="email"
+            id="email"
+            required
+          />
+          <label for="email" class="label-registration label-contact"
+            >Email</label
+          >
+        </div>
+        <div>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            class="input-registration textarea-contact"
+            required
+          ></textarea>
+          <label for="message" class="label-registration textarea-label-contact"
+            >Message</label
+          >
+        </div>
+        <div class="button-container button-contact">
+          <button type="submit" class="send-button">Send</button>
+        </div>
+      </form>
+      <div class="float-button">
+        <a href="./message.html" target="_blank"
+          ><img src="https://img.icons8.com/cotton/64/null/filled-chat--v1.png"
+        /></a>
+      </div>
+    </main>
+    <footer class="footer-container">
+      <div class="icons-container">
+        <a href="https://github.com/IsaRdz" target="_blank"
+          ><img src="https://img.icons8.com/ios-filled/48/EBEBEB/github.png"
+        /></a>
+        <a href="https://www.linkedin.com/in/isabelrod/" target="_blank"
+          ><img src="https://img.icons8.com/ios-filled/48/EBEBEB/linkedin.png"
+        /></a>
+      </div>
+      <div class="rights-container">
+        <p>Project developed in Bootcamp Front End Web Developer of MindHub LA</p>
+        <p>© 2022 Isabel Rodríguez | All Rights Reserved</p>
+      </div>
+    </footer>
+  </body>
+  <script src="../script.js"></script>
+</html>

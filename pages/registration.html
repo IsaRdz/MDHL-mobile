@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../assets/hockey.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>Registration</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="navbar">
+          <div class="logo">
+            <a href="../index.html"
+              ><img src="../assets/logomdhl.png" alt="Logo MDHL"
+            /></a>
+            <div class="burger-lines" id="burger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+            </div>
+          </div>
+          <div class="container nav-container">
+            <div class="menu-items hide" id="menu-items">
+              <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./about.html">About MDHL</a></li>
+                <li><a href="./registration.html">Registration</a></li>
+                <li><a href="./game-information.html">Game Information</a></li>
+                <li><a href="./rules.html">Rules</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li id="close">Exit</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1>Registration Form</h1>
+      <div class="container-form">
+        <form action="" class="form-registration">
+          <div class="form-page active">
+            <h3 class="title-form">Personal data</h3>
+            <div>
+              <input
+                type="text"
+                class="input-registration"
+                name="first-name"
+                id="first-name"
+                required
+              />
+              <label for="first-name" class="label-registration"
+                >Player's First Name</label
+              >
+            </div>
+            <div>
+              <input
+                type="text"
+                class="input-registration"
+                name="last-name"
+                id="last-name"
+                required
+              />
+              <label for="last-name" class="label-registration"
+                >Last Name</label
+              >
+            </div>
+            <div>
+              <input
+                type="text"
+                class="input-registration"
+                name="street-address"
+                id="street-address"
+                required
+              />
+              <label for="street-address" class="label-registration"
+                >Street Address</label
+              >
+            </div>
+            <div>
+              <input
+                type="text"
+                class="input-registration"
+                name="city"
+                id="city"
+                required
+              />
+              <label for="city" class="label-registration">City</label>
+            </div>
+            <div>
+              <input
+                type="number"
+                class="input-registration"
+                name="zip-code"
+                id="zip-code"
+                required
+              />
+              <label for="zip-code" class="label-registration">Zip Code</label>
+            </div>
+            <div>
+              <label for="birth-date" class="select">Birth date</label>
+              <input
+                type="date"
+                class="input-registration select"
+                name="birth-date"
+                id="birth-date"
+                placeholder="Birth Date: dd / mm / aaaa"
+                required
+              />
+            </div>
+            <div>
+              <select
+                name="gender"
+                id="gender"
+                class="input-registration select"
+              >
+                <option value="select">Gender</option>
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+                <option value="Other">Other</option>
+              </select>
+              <!--<label for="gender" class="label-registration">Gender</label>-->
+            </div>
+            <div class="container-back-continue first">
+              <span class="next-button">1 / 5 Continue >> </span>
+            </div>
+          </div>
+
+          <div class="form-page">
+            <h3 class="title-form">Parent / Guardian data</h3>
+            <div>
+              <input
+                type="text"
+                class="input-registration"
+                name="parent-name"
+                id="parent-name"
+                required
+              />
+              <label for="parent-name" class="label-registration"
+                >Parent Name</label
+              >
+            </div>
+            <div>
+              <input
+                type="text"
+                class="input-registration"
+                name="contact-phone"
+                id="contact-phone"
+                required
+              />
+              <label for="contact-phone" class="label-registration"
+                >Contact Phone</label
+              >
+            </div>
+            <div>
+              <input
+                type="email"
+                class="input-registration"
+                name="contact-email"
+                id="contact-email"
+                required
+              />
+              <label for="contact-email" class="label-registration"
+                >Contact Email</label
+              >
+            </div>
+            <div class="container-back-continue">
+              <span class="back-button"> << Back</span>
+              <span class="next-button">2 / 5 Continue >> </span>
+            </div>
+          </div>
+
+          <div class="form-page">
+            <h3 class="title-form">Player Profile</h3>
+            <h4 class="title-form">Grade</h4>
+            <div class="radio-check-container">
+              <div>
+                <input type="radio" name="grade-radio" id="pre-school" />
+                <label for="pre-school">Pre-school</label>
+              </div>
+              <div>
+                <input type="radio" name="grade-radio" id="first" />
+                <label for="first">1st</label>
+              </div>
+              <div>
+                <input type="radio" name="grade-radio" id="second" />
+                <label for="second">2nd</label>
+              </div>
+              <div>
+                <input type="radio" name="grade-radio" id="third" />
+                <label for="third">3rd</label>
+              </div>
+              <div>
+                <input type="radio" name="grade-radio" id="fourth" />
+                <label for="fourth">4th</label>
+              </div>
+              <div>
+                <input type="radio" name="grade-radio" id="fifth" />
+                <label for="fifth">5th</label>
+              </div>
+            </div>
+            <h4>Which elementary schools do you live near?</h4>
+            <div class="school-container">
+              <select
+                name="gender"
+                id="gender"
+                class="input-registration select"
+              >
+                <option value="aj-katzenmaier">AJ Katzenmaier</option>
+                <option value="greenbay">Greenbay</option>
+                <option value="howard-a-yeager">Howard A Yeager</option>
+                <option value="marjorie-p-hart">Marjorie P Hart</option>
+                <option value="north-elementary">North Elementary</option>
+                <option value="south-elementary">South Elementary</option>
+              </select>
+              <!--<label for="gender" class="label-registration">First Closest School: </label>-->
+            </div>
+            <div class="school-container">
+              <select
+                name="gender"
+                id="gender"
+                class="input-registration select"
+              >
+                <option value="aj-katzenmaier">AJ Katzenmaier</option>
+                <option value="greenbay">Greenbay</option>
+                <option value="howard-a-yeager">Howard A Yeager</option>
+                <option value="marjorie-p-hart">Marjorie P Hart</option>
+                <option value="north-elementary">North Elementary</option>
+                <option value="south-elementary">South Elementary</option>
+              </select>
+              <!--<label for="gender" class="label-registration">Second Closest School: </label>-->
+            </div>
+            <h4 class="title-form">
+              What position(s) do you normally play? (check all that apply)
+            </h4>
+            <div class="radio-check-container">
+              <div>
+                <input type="checkbox" name="position-you-play" id="forward" />
+                <label for="forward">Forward</label>
+              </div>
+              <div>
+                <input type="checkbox" name="position-you-play" id="defense" />
+                <label for="defense">Defense</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  name="position-you-play"
+                  id="midfield "
+                />
+                <label for="midfield ">Midfield </label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  name="position-you-play"
+                  id="goalkeeper "
+                />
+                <label for="goalkeeper  ">Goalkeeper </label>
+              </div>
+            </div>
+            <h4 class="title-form">
+              What position(s) do you want to play? (check all that apply)
+            </h4>
+            <div class="radio-check-container">
+              <div>
+                <input type="checkbox" name="position-want-play" id="forward" />
+                <label for="forward">Forward</label>
+              </div>
+              <div>
+                <input type="checkbox" name="position-want-play" id="defense" />
+                <label for="defense">Defense</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  name="position-want-play"
+                  id="midfield "
+                />
+                <label for="midfield ">Midfield </label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  name="position-want-play"
+                  id="goalkeeper "
+                />
+                <label for="goalkeeper  ">Goalkeeper </label>
+              </div>
+            </div>
+            <div class="container-back-continue">
+              <span class="back-button"> << Back</span>
+              <span class="next-button">3 / 5 Continue >> </span>
+            </div>
+          </div>
+
+          <div class="form-page">
+            <h3>Uniform Information</h3>
+            <div class="have-uniform-container">
+              <input type="checkbox" name="have-uniform" id="have-uniform" />
+              <label for="have-uniform">Already Have a Uniform</label>
+            </div>
+            <h4>Jersey Size:</h4>
+            <div class="radio-check-container">
+              <div>
+                <input type="radio" name="jersey-size" id="youth-small" />
+                <label for="youth-small">Youth Small</label>
+              </div>
+              <div>
+                <input type="radio" name="jersey-size" id="youth-medium" />
+                <label for="youth-medium">Youth Medium</label>
+              </div>
+              <div>
+                <input type="radio" name="jersey-size" id="youth-large" />
+                <label for="youth-large">Youth Large</label>
+              </div>
+              <div>
+                <input type="radio" name="jersey-size" id="small" />
+                <label for="small">Small</label>
+              </div>
+              <div>
+                <input type="radio" name="jersey-size" id="medium" />
+                <label for="medium">Medium</label>
+              </div>
+              <div>
+                <input type="radio" name="jersey-size" id="large" />
+                <label for="large">Large</label>
+              </div>
+              <div>
+                <input type="radio" name="jersey-size" id="extra-large" />
+                <label for="extra-large">Extra-Large</label>
+              </div>
+            </div>
+            <h4>Shorts Size:</h4>
+            <div class="radio-check-container">
+              <div>
+                <input type="radio" name="short-size" id="youth-small" />
+                <label for="youth-small">Youth Small</label>
+              </div>
+              <div>
+                <input type="radio" name="short-size" id="youth-medium" />
+                <label for="youth-medium">Youth Medium</label>
+              </div>
+              <div>
+                <input type="radio" name="short-size" id="youth-large" />
+                <label for="youth-large">Youth Large</label>
+              </div>
+              <div>
+                <input type="radio" name="short-size" id="small" />
+                <label for="small">Small</label>
+              </div>
+              <div>
+                <input type="radio" name="short-size" id="medium" />
+                <label for="medium">Medium</label>
+              </div>
+              <div>
+                <input type="radio" name="short-size" id="large" />
+                <label for="large">Large</label>
+              </div>
+              <div>
+                <input type="radio" name="short-size" id="extra-large" />
+                <label for="extra-large">Extra-Large</label>
+              </div>
+            </div>
+            <div class="container-back-continue">
+              <span class="back-button"> << Back</span>
+              <span class="next-button">4 / 5 Continue >> </span>
+            </div>
+          </div>
+
+          <div class="form-page">
+            <h3 class="title-form">Permission to Play</h3>
+            <p class="agree-text">
+              I, the parent or guardian of the minor registrant, agree that the
+              registrant and I will abide by all the rules of the Mighty Ducks
+              Hockey League (MDHL). In recognizing the possibility of physical
+              injury associated with soccer and in consideration for the
+              "League" accepting the registrant for its soccer programs and
+              activities, I hereby release, discharge, and/or otherwise
+              indemnify MDHL, their employees and associated personnel and
+              volunteers, including the facilities used for practices and games,
+              against any claim by or on behalf of the registrant as a result of
+              the registrant's participation in the program and/or being
+              transported to or from MDHL sponsored activities, which
+              transportation.
+            </p>
+            <p class="agree-text">
+              By entering my name below, I hereby agree and authorize the above.
+              In addition, by entering my name below, I also acknowledge that I
+              have read the cancellation policy and agree to its terms.
+            </p>
+            <div>
+              <input
+                type="text"
+                class="input-registration"
+                name="parent-signature"
+                id="parent-signature"
+                required
+              />
+              <label for="parent-signature" class="label-registration"
+                >Parent / Guardian Signature</label
+              >
+            </div>
+            <div>
+              <label for="date" class="select">Date: </label>
+              <input
+                type="date"
+                class="input-registration select"
+                name="date"
+                id="date"
+                required
+              />
+            </div>
+            <div class="button-container">
+              <span class="back-button"> << Back</span>
+              <button
+                type="submit"
+                class="send-button"
+                onclick="location.href='../index.html'"
+              >
+                Send
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="float-button">
+        <a href="./message.html" target="_blank"
+          ><img src="https://img.icons8.com/cotton/64/null/filled-chat--v1.png"
+        /></a>
+      </div>
+    </main>
+    <footer class="footer-container">
+      <div class="icons-container">
+        <a href="https://github.com/IsaRdz" target="_blank"
+          ><img src="https://img.icons8.com/ios-filled/48/EBEBEB/github.png"
+        /></a>
+        <a href="https://www.linkedin.com/in/isabelrod/" target="_blank"
+          ><img src="https://img.icons8.com/ios-filled/48/EBEBEB/linkedin.png"
+        /></a>
+      </div>
+      <div class="rights-container">
+        <p>Project developed in Bootcamp Front End Web Developer of MindHub LA</p>
+        <p>© 2022 Isabel Rodríguez | All Rights Reserved</p>
+      </div>
+    </footer>
+  </body>
+  <script src="../script.js"></script>
+</html>

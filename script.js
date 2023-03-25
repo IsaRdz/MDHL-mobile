@@ -1,12 +1,3 @@
-const closeBtn = document.getElementById('close');
-
-closeBtn.addEventListener("click", () =>{
-    console.log("close button")
-    window.open('', '_self', '');
-    window.close();
-    
-})
-
 const burgerFunction = () =>{
     const burgerLines = document.getElementById('burger-lines');
     const menuItems = document.getElementById('menu-items');
@@ -55,3 +46,12 @@ const nextFunction = () =>{
 }
 nextFunction();
 
+const messageText = document.getElementById('message-text');
+const sendMessage = document.getElementById('send-message');
+const messageSent = document.getElementById('message-sent');
+
+sendMessage.addEventListener("click", ()=>{
+    messageSent.innerHTML =`
+    <p>${messageText.value} </p>
+    `
+})

@@ -46,12 +46,3 @@ const nextFunction = () =>{
 }
 nextFunction();
 
-const messageText = document.getElementById('message-text');
-const sendMessage = document.getElementById('send-message');
-const messageSent = document.getElementById('message-sent');
-
-sendMessage.addEventListener("click", ()=>{
-    messageSent.innerHTML =`
-    <p>${messageText.value} </p>
-    `
-})
